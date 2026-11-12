@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.screen {
+  max-width: 255px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.block {
+  background-color: var(--color-block);
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.h2 {
+    margin-top: 0;
+  }
+}
+
+.fix {
+  width: 254px;
+}
+
+.fill {
+  width: 100%;
+  &.max {
+    max-width: 640px;
+  }
+  &.min {
+    min-width: 180px;
+  }
+}
+
+.hug {
+  width: fit-content;
+}

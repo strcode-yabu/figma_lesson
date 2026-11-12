@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.screen {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  .button {
+    width: fit-content;
+    min-width: 320px;
+    aspect-ratio: initial;
+    color: var(--color-bg);
+    background-color: var(--color-main);
+    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+  }
+  .button--mail::before {
+    content: "mail";
+    font-family: "Material Symbols Outlined";
+    vertical-align: middle;
+  }
+  .button--next::after {
+    content: "keyboard_arrow_right";
+    font-family: "Material Symbols Outlined";
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    translate: 0 -50%;
+  }
+}

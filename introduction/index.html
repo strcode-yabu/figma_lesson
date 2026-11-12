@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Introduction : フローレイアウトについて / Figma 勉強会</title>
+    <style>
+      img {
+        max-width: 100%;
+      }
+    </style>
+    <script src="../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <h1 class="title h1">
+            <a href="../" class="link">
+              Figma 勉強会
+            </a>
+          </h1>
+          <dialog id="navi_menu" class="navi_menu">
+            <div class="container">
+              <p class="title h1">
+                <a href="../" class="link">
+                  Figma 勉強会
+                </a>
+              </p>
+              <p class="button_wrap">
+                <button id="navi_button__close" class="button">
+                  <span class="icon material-symbols-outlined">
+                    close
+                  </span>
+                </button>
+              </p>
+              <nav class="navi">
+                <ul class="list">
+                  <li class="item">
+                    <a class="link" href="#about">
+                      Figma を使いこなそう
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a class="link" href="#web_future">
+                      Web デザインの特徴
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a class="link" href="#figma_future">
+                      Figma の主な機能
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a class="link" href="#team">
+                      共同作業でも便利に使える
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a class="link" href="#summary">
+                      デザインをプロジェクト資産に
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </dialog>
+          <p class="button_wrap">
+            <button id="navi_button__open" class="button">
+              <span class="icon material-symbols-outlined">
+                menu
+              </span>
+            </button>
+          </p>
+        </div>
+      </header>
+      <main class="main">
+        <figure class="main_visual">
+          <p class="main_visual">
+            <img class="img" src="https://placehold.jp/64/999999/ffffff/1920x1080.jpg" alt="">
+          </p>
+        </figure>
+        <section id="about" class="section section--about">
+          <header class="header">
+            <div class="container">
+              <h2 class="h2 title">
+                Figma を使いこなそう
+              </h2>
+            </div>
+          </header>
+          <div class="container">
+            <p class="text">
+              Figma は Web や アプリケーションなどの画面設計や UI の制作に最大に効果を発揮するように作られたアプリケーションです。
+            </p>
+            <p class="text">
+              それらの画面がどのような理屈で動いているか、理解することでより目的にマッチした Figma のデザインを作ることができます。
+            </p>
+          </div>
+        </section>
+        <section id="web_future" class="section section--web_future">
+          <header class="header">
+            <div class="container">
+              <h2 class="h2 title">
+                Web デザインの特徴
+              </h2>
+            </div>
+          </header>
+          <div class="container">
+            <ul class="card_list">
+              <li class="card_item">
+                <h3 class="h3 title">
+                  画面サイズが変動する
+                </h3>
+                <p class="img_wrap">
+                  <img class="img" src="https://placehold.jp/64/999999/ffffff/1920x1080.jpg" alt="">
+                </p>
+                <p class="text">
+                  Web サイトを表示する領域は端末や環境によって絶えず変動し、いかなるケースにおいても情報を正しく表示する必要があります。
+                </p>
+              </li>
+              <li class="card_item">
+                <h3 class="h3 title">
+                  内容量が変化する
+                </h3>
+                <p class="img_wrap">
+                  <img class="img" src="https://placehold.jp/64/999999/ffffff/1920x1080.jpg" alt="">
+                </p>
+                <p class="text">
+                  先の画面幅に関連する内容ですが、文章の折り返しなどが閲覧する環境で変化するため、その変化に合わせてデザインが対応できるように作る必要があります。
+                </p>
+              </li>
+              <li class="card_item">
+                <h3 class="h3 title">
+                  パーツの共有がある
+                </h3>
+                <p class="img_wrap">
+                  <img class="img" src="https://placehold.jp/64/999999/ffffff/1920x1080.jpg" alt="">
+                </p>
+                <p class="text">
+                  例を挙げるとリンクやお問い合わせの UI としてボタンを配置することがあります。
+                  その場合、同じような部品でページごとに差異があるといけないので共通の部品として共有します。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="figma_future" class="section section--figma_future">
+          <header class="header">
+            <div class="container">
+              <h2 class="h2 title">
+                Figma の主な機能
+              </h2>
+            </div>
+          </header>
+          <div class="container">
+            <h3 class="h3 title">
+              デザインのための Figma 機能
+            </h3>
+            <ul class="list">
+              <li class="item item--check">
+                オートレイアウト
+              </li>
+              <li class="item item--check">
+                スタイル
+              </li>
+              <li class="item item--check">
+                コンポーネント・インスタンス
+              </li>
+            </ul>
+            <h3 class="h3 title">
+              もっと便利な Figma 機能
+            </h3>
+            <ul class="list">
+              <li class="item item--check">
+                プロトタイプ
+              </li>
+              <li class="item item--check">
+                バリアント
+              </li>
+              <li class="item item--check">
+                プラグイン
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="team" class="section section--team">
+          <header class="header">
+            <div class="container">
+              <h2 class="h2 title">
+                共同作業でも便利に使える
+              </h2>
+            </div>
+          </header>
+          <div class="container">
+            <h3 class="h3 title">
+              共同作業のための Figma 機能
+            </h3>
+            <ul class="list">
+              <li class="item item--check">
+                プレビュー
+              </li>
+              <li class="item item--check">
+                共有
+              </li>
+              <li class="item item--check">
+                開発者モード
+              </li>
+              <li class="item item--check">
+                プレゼンテーション機能
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="summary" class="section section--summary">
+          <header class="header">
+            <div class="container">
+              <h2 class="h2 title">
+                デザインをプロジェクト資産に
+              </h2>
+            </div>
+          </header>
+          <div class="container">
+            <p class="text">
+              Figma はいままでデザイナーの中に閉じられていたデザインを、プロジェクトにかかわるすべての人で共有することを可能にしたツールです。
+            </p>
+            <p class="text">
+              企画は企画、デザインはデザイン、コードはコードと、分かれていたすべてを統合し、それぞれの役職の垣根を超えた相互理解を促し、デザインを通じてプロジェクトの成果物を良くしていくことが期待できます。
+            </p>
+            <p class="text">
+              そのためには Figma に用意された機能を正しく利用し、制作するデザインの特徴を理解した上で、一貫して使える資産としてデザインを作っておくことが求められます。
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <p class="copyright_wrap">
+            <small class="copyright">
+              (c) 2026 S.Yabunaka@strCode.
+            </small>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
